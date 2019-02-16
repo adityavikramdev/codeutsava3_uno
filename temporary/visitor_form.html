@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Startup registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"  >
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: rgb(79,24,131)">
+         <div class="container">
+             <div class="navbar-header">
+                 <a href="#" class="navbar-brand">UNO</a>
+                 </div>
+             <ul class="nav navbar-nav navbar-right">
+                 <li><a href="#" target="_parent">Admin<span class="glyphicon glyphicon-user"></span></a></li>
+                 <li><a href="registration.html" target="_blank">Registration<span class="glyphicon glyphicon-registration"></span></a></li>
+                 <li><a href="login.html" target="_blank">LogIn<span class="gylphicon glyphicon-log-in"></span></a></li>
+                 </ul>
+             </div>
+         </nav>
+         <br><br><br>
+         <form>
+                <center>
+                  <caption><h2>Visitor's Details:</h2></caption><br>
+                  <label>Name:</label><br>
+                  <input type="text" name="name" placeholder="Visitors Name" required="true"><br><br>
+                  <label>Contact No:</label><br>
+                  <input type="number" name="number" placeholder="Mobile Number" required="true"><br><br>
+                  <label>Email Id:</label><br>
+                  <input type="email" name="email" placeholder="Email Id" required="true"><br><br>
+                  <label>Purpose Of Meet:</label><br>
+                  <input type="text" name="pom" placeholder="Purpose Of Meet" required="true"><br><br>
+                  <label>Office No/Name</label><br>
+                  <input type="text" name="office" placeholder="Office No/Name" required="true"><br><br>
+                  <button type="submit" class="btn btn-success">Submit</button>
+                  <button type="refresh" class="btn btn-submit" onclick="reloadpg()">Refresh</button>
+
+         </form>
+         <script>
+                  function reloadpg(){
+                    location.reload();
+                  }
+         </script>
+
+         </body>
+         </html>

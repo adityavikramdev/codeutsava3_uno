@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Startup registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"  >
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: rgb(79,24,131)">
+         <div class="container">
+             <div class="navbar-header">
+                 <a href="#" class="navbar-brand">UNO</a>
+                 </div>
+             <ul class="nav navbar-nav navbar-right">
+                 <li><a href="#" target="_parent">Admin<span class="glyphicon glyphicon-user"></span></a></li>
+                 <li><a href="registration.html" target="_blank">Registration<span class="glyphicon glyphicon-registration"></span></a></li>
+                 <li><a href="login.html" target="_blank">LogIn<span class="gylphicon glyphicon-log-in"></span></a></li>
+                 </ul>
+             </div>
+         </nav>
+         <br><br><br>
+         <form>
+           <center>
+              <caption><h2>Project Description</h2></caption><br><br>
+              <label>Project Title:</label><br>
+              <input type="textarea" name="title" placeholder="Add project title here"><br><br>
+              <label>Project Domain:</label>
+              <select>
+                <option value=""></option>
+                <option value="Agriculture">Agriculture</option>
+                <option value="Health Care">Health Care</option>
+                <option value="Finance">Finance</option>
+                <option value="Agriculture">Agriculture</option>
+                <option value="IoT">IoT</option>
+                <option value="Machine Learning">Machine Learning</option>
+                <option value="AR/VR">AR/VR</option>
+              </select><br><br>
+              <label>Project Description:</label><br>
+              <input type="textarea" name="description" placeholder="Add your description here" autocomplete="on"><br><br>
+              <button type="submit" class="btn btn-success">submit</button>
+              <button onclick="reloadpage()" class="btn btn-submit">Refresh</button>
+              </center>
+
+         </form>
+         <script>
+                  function reloadpage(){
+                    location.reload();
+                  }
+         </script>
+         </body>
+         </html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mentor Registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"  >
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: rgb(79,24,131)">
+         <div class="container">
+             <div class="navbar-header">
+                 <a href="#" class="navbar-brand">UNO</a>
+                 </div>
+             <ul class="nav navbar-nav navbar-right">
+                 <li><a href="#" target="_parent">Admin<span class="glyphicon glyphicon-user"></span></a></li>
+                 <li><a href="registration.html" target="_blank">Registration<span class="glyphicon glyphicon-registration"></span></a></li>
+                 <li><a href="login.html" target="_blank">LogIn<span class="gylphicon glyphicon-log-in"></span></a></li>
+                 </ul>
+             </div>
+         </nav>
+<br><br><br><br>
+
+         <form method="POST" action="#" autocomplete="on">
+           <center>
+           <caption><h2>Mentor Registration Form</h2></caption><br><br>
+           <label>Name:</label><br>
+           <input type="text" name="name" placeholder="Name of Mentor" required="true"><br><br>
+           <label>Qualification:</label><br>
+           <input type="text" name="qualification" placeholder="Qualification" required="true"><br><br>
+           <label>Field of Interest:</label><br>
+           <select>
+                  <option value="Field of Interest">Field of Interest</option>
+                  <option value="Agriculture">Agriculture</option>
+                  <option value="Health Care">Health Care</option>
+                  <option value="Finance">Finance</option>
+                  <option value="Agriculture">Agriculture</option>
+                  <option value="IoT">IoT</option>
+                  <option value="Machine Learning">Machine Learning</option>
+                  <option value="AR/VR">AR/VR</option>
+            </select><br><br>
+            <label>Contact No:</label><br>
+            <input type="number" name="contactNo" placeholder="Contact No" required="true"><br><br>
+            <label>Password:</label><br>
+            <input type="password" name="password" placeholder="password" required="true"><br><br>
+            <label>Confirm Password:</label><br>
+            <input type="password" name="confirmPassword" placeholder="Confirm Password" required="true"><br><br>
+            <label>Unique Identification:</label><br>
+            <input type="file" name="uniqueIdentification"><br><br>
+
+            <button type="button" value="submit">Submit</button>&nbsp;
+            <input type="reset">
+            </center>
+
+
+
+
+
+
+         </form>
+         </body>
+         </html>

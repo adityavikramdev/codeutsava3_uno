@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Startup registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"  >
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: rgb(79,24,131)">
+         <div class="container">
+             <div class="navbar-header">
+                 <a href="#" class="navbar-brand">UNO</a>
+                 </div>
+             <ul class="nav navbar-nav navbar-right">
+                 <li><a href="#" target="_parent">Admin<span class="glyphicon glyphicon-user"></span></a></li>
+                 <li><a href="registration.html" target="_blank">Registration<span class="glyphicon glyphicon-registration"></span></a></li>
+                 <li><a href="login.html" target="_blank">LogIn<span class="gylphicon glyphicon-log-in"></span></a></li>
+                 </ul>
+             </div>
+         </nav>
+         <!--<div id="banner_image">
+                     <div class="container">
+                         <div id="banner_content">
+                             <center>
+                              <a href="products.html" class="btn btn-danger btn-lg active"><h3>Shop Now</h3></a>
+                         </center>
+                         </div>
+                      </div>
+        </div>-->
+        <form method="POST" action="#">
+          <center>
+                <caption>Registration Form</caption>
+                <label>Name of Startup:</label><br>
+                <input type="text" name="nameOfStartup" placeholder="Name of startup" required="true"><br><br>
+                <label>Founder/Co-Founder Name:</label><br>
+                <input type="text" name="founderName" placeholder="Founder Name" required="true"><br><br>
+                <label>Email Id:</label><br>
+                <input type="email" name="email" placeholder="Email Id" required="true"><br><br>
+                <label>Contact No:</label><br>
+                <input type="number" name="contact" placeholder="Contact No" required="true"><br><br>
+                <label>Password:</label><br>
+                <input type="password" name="password" placeholder="password" required="true"><br><br>
+                <label>Confirm Password:</label><br>
+                <input type="password" name="confirmPassword" placeholder="Confirm Password" required="true"><br><br>
+                <label>Address:</label><br>
+                <input type="textarea" name="address" placeholder="Correspondence address" required="true"><br><br>
+                <label>Affliated By:</label><br>
+                <input type="radio" name="affliation" value="none" checked>None<br>
+                <input type="radio" name="affliation" value="Central Government">Central Government<br>
+                <input type="radio" name="affliation" value="State Government">State Government<br>
+                <input type="radio" name="affliation" value="Incubation Center">Incubation center<br><br><br>
+                <button type="button" value="Submit"></button>
+                <input type="reset">
+                </center>
+        </form>
+  </body>
+</html>

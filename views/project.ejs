@@ -1,0 +1,229 @@
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Mentor Home</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--font awesome code-->
+    <script src="https://use.fontawesome.com/cff3954bc0.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+
+    <link rel="icon" type="image/jpg" sizes="192x192" href="image/logo1.jpg">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="image/logo1.jpg">
+    <link rel="icon" type="image/jpg" sizes="96x96" href="image/logo1.jpg">
+    <link rel="icon" type="image/jpg" sizes="16x16" href="image/logo1.jpg">
+    <!--main css-->
+    <!-- <link href="../public/css/adminhomestyle.css" rel="stylesheet"> -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- <script src="js/jquery.js"></script> -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <style>
+    .navbar-nav {
+  width: 80%;
+
+height: 70px;
+}
+
+.navbar-nav > li {
+  float: right;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .navbar{
+    margin:0px;
+  }
+  .navbar-brand{
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  .text > a {
+    text-decoration: none;
+    color: #ffff00;
+  }
+
+.navbar-nav>li>a:hover{
+  text-decoration: none;
+  color:black!important;
+}
+
+
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: absolute;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #337AB7;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+</style>
+
+  </head>
+  <body>
+<!--navbar-->
+
+<nav class="navbar navbar-inverse" role="navigation" style="background-color:#337AB7;border-color:#337AB7;color:white;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="navbar-brand">
+      <a href="index.html"><img src="image/logo2.png" class="img-responsive" style="width:80px; height:70px;" alt="UNO"></a>
+      </div>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="li"><a class="btn btn-primary" style="color:black;font-size:16px;background-color:white;" href="#">Videos</a></li>
+
+        <li class="lis3"><a style="color:white;" href="http://sto.capitalexchange.tech">FAQs</a></li>
+        <li class="lis4"><a style="color:white;" href="http://stmoritz.capitalexchange.tech">Sessions</a></li>
+        <li class="lis"><a style="color:white;" href="http://roadshow.capitalexchange.tech">Events</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section>
+  <div class="sidebar">
+    <a class="active" href="#home">Add projects</a>
+    <a href="/startupprofile">Profile</a>
+    <a href="/liststartupprojects">Status of Projects</a>
+    <a href="/getevents">Events</a>
+    <a href="/getsessions">Sessions</a>
+    <a href="#">FAQ</a>
+    <a href="/logout">Logout</a>
+  </div>
+
+  <div class="content">
+    <center><h1>Add Projects</h1></center>
+    <br>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="panel panel-primary">
+                <div class="panel-heading"><strong>Project Description</strong></div>
+                <div class="panel-body">
+
+                  <form method="post" action="/postproject">
+                    <div class="form-group">
+                      <label for="text">Project Title:</label><br>
+                      <input type="textarea" class="form-control" name="title" placeholder="Add project title here">
+                    </div>
+                    <div class="form-group">
+                      <label for="text">Project Domain:</label>
+                      <br>
+                      <select name="domain" class="form-control">
+                        <option value=""></option>
+                        <option value="Agriculture">Agriculture</option>
+                        <option value="Health Care">Health Care</option>
+                        <option value="Finance">Finance</option>
+                        <option value="Agriculture">Agriculture</option>
+                        <option value="IoT">IoT</option>
+                        <option value="Machine Learning">Machine Learning</option>
+                        <option value="AR/VR">AR/VR</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="reg">Project Description:</label>
+                      <input type="textarea" rows="5" class="form-control" name="description" placeholder="Add your description here" autocomplete="on">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                </div>
+                </div>
+      </div>
+    </div>
+</div>
+</section>
+
+
+    <script src="js/main.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"
+  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  crossorigin="anonymous"></script>
+  </body>
+  <script>
+    $(document).ready(function(){
+      $('.pid').on('click',updateStatus)
+    });
+    function updateStatus(){
+      var confirmation=confirm("Are you sure?");
+      if(confirmation){
+        $.ajax({
+          // console.log('user1._id');
+          type:"POST",
+          url:"/updateprojectstatus"+$('.lid')
+
+        }).done(function(response){
+          window.location.replace('/getprojects');
+        });
+
+      }else{
+        return false;
+      }
+    }
+  </script>
+</html>

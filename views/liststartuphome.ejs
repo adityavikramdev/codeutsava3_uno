@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Startup Dashboard</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"  >
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <style media="screen">
+        body{
+          background-color:white;
+        }
+        table,td,th{
+          border:1px solid black;
+          padding:5px;
+        }
+
+      </style>
+      </head>
+      <body>
+        <nav class="navbar navbar-inverse" role="navigation" style="background-color:rgba(0,0,0,0.5);border-color:transparent;color:white;">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+          <a href="index.html"><img src="image/0.png" class="img-responsive" style="width:80px; height:70px;" alt="responsive"></a>
+          </div>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="li"><a class="btn btn-primary" style="color:black;font-size:16px;background-color:white;" href="#">Videos</a></li>
+
+            <li class="lis3"><a style="color:white;" href="http://sto.capitalexchange.tech">FAQs</a></li>
+            <li class="lis4"><a style="color:white;" href="http://stmoritz.capitalexchange.tech">Sessions</a></li>
+            <li class="lis"><a style="color:white;" href="http://roadshow.capitalexchange.tech">Events</a></li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+      <body>
+        <br><br>
+        <div><center><h1><b>Start-Up Details</b></h1></center></div>
+          <center>
+      <table border="1" padding="5px">
+      <tr>
+            <th style="font-size:20px;"">Sl.No</th>
+            <th style="font-size:20px;">Name of Startups</th>
+              <!-- <th style="font-size:20px;">Project Name</th> -->
+                <th style="font-size:20px;">Status</th>
+          </tr>
+         <tbody>
+            <!-- <%= result %> -->
+            <% result.forEach(function(user){ %>
+            <% user.forEach(function(user1){ %>
+           <!--  <tr>
+            <td style="display:none;"  class="lid" data-id="<%= user1._id %>">
+            </td> -->
+            <!-- <td>1</td> -->
+            <td><%= user1.name %></td>
+            <!-- <td><a href="#popup"><%= user1.name %></a></td> -->
+            <td><a href="#popup"><%= user1.status %></a></td>
+            <!-- <td><center><button class="pid">Activate</button></center></td> -->
+            
+          </tr>
+          <% }) %>
+          <% }) %> 
+
+          </tbody>
+          </table>
+</center>
+<script>
+    var tables = document.getElementsByTagName('table');
+    var table = tables[tables.length - 1];
+    var rows = table.rows;
+    for(var i = 1, td; i < rows.length; i++){
+        td = document.createElement('td');
+        td.appendChild(document.createTextNode(i));
+        rows[i].insertBefore(td, rows[i].firstChild);
+    }
+</script>
+</body>
+</html>

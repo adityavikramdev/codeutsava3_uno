@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Codeutsava</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--font awesome code-->
+    <script src="https://use.fontawesome.com/cff3954bc0.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link rel="icon" type="image/jpg" sizes="192x192" href="image/logo1.jpg">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="image/logo1.jpg">
+    <link rel="icon" type="image/jpg" sizes="96x96" href="image/logo1.jpg">
+    <link rel="icon" type="image/jpg" sizes="16x16" href="image/logo1.jpg">
+    <!--main css-->
+    <link href="css/custom.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <style>
+
+
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: absolute;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #337AB7;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+</style>
+
+  </head>
+  <body>
+<!--navbar#337AB7-->
+
+<nav class="navbar navbar-inverse" role="navigation" style="background-color:#337AB7;border-color:#337AB7;color:white;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="navbar-brand">
+      <a href="index.html"><img src="image/logo2.png" class="img-responsive" style="padding: 3px;width:80px; height:70px;" alt="UNO"></a>
+      </div>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="li"><a class="btn btn-primary" href="faq.html" style="color:black;font-size:16px;background-color:white;" href="#">Admin</a></li>
+        <li class="lis3"><a style="color:white;" href="http://sto.capitalexchange.tech">FAQs</a></li>
+        <li class="lis3"><a style="color:white;" href="http://sto.capitalexchange.tech">Videos</a></li>
+        <li class="lis4"><a style="color:white;" href="http://stmoritz.capitalexchange.tech">Sessions</a></li>
+        <li class="lis"><a style="color:white;" href="http://roadshow.capitalexchange.tech">Events</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+<section id="sessions">
+      <!--  <div class="container" style="margin-top:50px;">
+          <center>
+          <div class="jumbotron" style="height:500px;background-color:rgba(0,0,0,0.3)">
+
+            <h1 style="color:white;"><b>Investor Pitch Sessions</b></h1>
+            <h2 style="color:white;">Stay tunned for upcoming sessions</h2>
+            <h3 style="color:white;">Check for more events</h3>
+            <button type="submit" value="submit" class="btn btn-primary" style="border-radius:20px; padding-bottom:15px;"><h3><b>Click Here</b></h3></button>
+            </div>
+            </center>
+            </div>-->
+      </section>
+
+
+
+<!--<div class="jumbotron" style="background-color:rgba(0,0,0,0);">
+    <center>
+    <p style="font-size:30px;color:black;">Investor Sessions and Pitching opportuities</p>
+  </center>
+  </div>-->
+
+
+  <section class="no-padding" id="portfolio" style="background-color:rgb(241,242,247);color:black;">
+    <br><br>
+        <div class="container-fluid">
+          <center><h1>Investor Sessions and Pitching opportuities</h1></center>
+          <br><br>
+            <div class="row no-gutter popup-gallery">
+              <div class="col-lg-2 col-md-2 col-sm-2">
+
+              </div>
+              <div class="col-lg-8 col-md-8 col-sm-8" style="background-color:white;color:grey;">
+              <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left:0px;padding-right:0px;">
+                <center>
+                  <a href="https://www.engadin.stmoritz.ch/winter/en/news-events/topevents/la-diagonela-en/" class="portfolio-box">
+                      <img src="image/finance.jpg" class="img-responsive" alt="">
+                      <div class="portfolio-box-caption">
+                          <div class="portfolio-box-caption-content">
+                              <div class="project-category text-faded" >
+                                  Finance
+                              </div>
+
+                          </div>
+                      </div>
+                  </a>
+                </center>
+
+              </div>
+              <div class="col-lg-8 col-md-8 col-sm-8">
+                <br>
+                <center><h3>20 February, 2019</h3>
+                  <h4>Domain: Finance</h4></center>
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+
+          <div class="row no-gutter popup-gallery">
+            <div class="col-lg-2 col-md-2 col-sm-2">
+
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8" style="background-color:white;color:grey;">
+            <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left:0px;padding-right:0px;">
+              <center>
+                <a href="https://www.engadin.stmoritz.ch/winter/en/news-events/topevents/la-diagonela-en/" class="portfolio-box">
+                    <img src="image/software.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded" >
+                                Software
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+              </center>
+
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8">
+              <br>
+              <center><h3>21 February, 2019</h3>
+                <h4>Domain: Software</h4></center>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="row no-gutter popup-gallery">
+          <div class="col-lg-2 col-md-2 col-sm-2">
+
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-8" style="background-color:white;color:grey;">
+          <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left:0px;padding-right:0px;">
+            <center>
+              <a href="https://www.engadin.stmoritz.ch/winter/en/news-events/topevents/la-diagonela-en/" class="portfolio-box">
+                  <img src="image/trans.jpg" class="img-responsive" alt="">
+                  <div class="portfolio-box-caption">
+                      <div class="portfolio-box-caption-content">
+                          <div class="project-category text-faded" >
+                              Transportation
+                          </div>
+
+                      </div>
+                  </div>
+              </a>
+            </center>
+
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-8">
+            <br>
+            <center><h3>22 February, 2019</h3>
+              <h4>Domain: Transportation</h4></center>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="row no-gutter popup-gallery">
+        <div class="col-lg-2 col-md-2 col-sm-2">
+
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-8" style="background-color:white;color:grey;">
+        <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left:0px;padding-right:0px;">
+          <center>
+            <a href="https://www.engadin.stmoritz.ch/winter/en/news-events/topevents/la-diagonela-en/" class="portfolio-box">
+                <img src="image/agri.jpg" class="img-responsive" alt="">
+                <div class="portfolio-box-caption">
+                    <div class="portfolio-box-caption-content">
+                        <div class="project-category text-faded" >
+                            Agriculture
+                        </div>
+
+                    </div>
+                </div>
+            </a>
+          </center>
+
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-8">
+          <br>
+          <center><h3>23 February, 2019</h3>
+            <h4>Domain: Agriculture</h4></center>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row no-gutter popup-gallery">
+      <div class="col-lg-2 col-md-2 col-sm-2">
+
+      </div>
+      <div class="col-lg-8 col-md-8 col-sm-8" style="background-color:white;color:grey;">
+      <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left:0px;padding-right:0px;">
+        <center>
+          <a href="https://www.engadin.stmoritz.ch/winter/en/news-events/topevents/la-diagonela-en/" class="portfolio-box">
+              <img src="image/health.jpg" class="img-responsive" alt="">
+              <div class="portfolio-box-caption">
+                  <div class="portfolio-box-caption-content">
+                      <div class="project-category text-faded" >
+                          Healthcare
+                      </div>
+
+                  </div>
+              </div>
+          </a>
+        </center>
+
+      </div>
+      <div class="col-lg-8 col-md-8 col-sm-8">
+        <br>
+        <center><h3>24 February, 2019</h3>
+          <h4>Domain: Healthcare</h4></center>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <div class="row no-gutter popup-gallery">
+    <div class="col-lg-2 col-md-2 col-sm-2">
+
+    </div>
+    <div class="col-lg-8 col-md-8 col-sm-8" style="background-color:white;color:grey;">
+    <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left:0px;padding-right:0px;">
+      <center>
+        <a href="https://www.engadin.stmoritz.ch/winter/en/news-events/topevents/la-diagonela-en/" class="portfolio-box">
+            <img src="image/env.jpg" class="img-responsive" alt="">
+            <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                    <div class="project-category text-faded" >
+                        Environment
+                    </div>
+
+                </div>
+            </div>
+        </a>
+      </center>
+
+    </div>
+    <div class="col-lg-8 col-md-8 col-sm-8">
+      <br>
+      <center><h3>25 February, 2019</h3>
+        <h4>Domain: Environment</h4></center>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+
+<div class="row no-gutter popup-gallery">
+  <div class="col-lg-2 col-md-2 col-sm-2">
+
+  </div>
+  <div class="col-lg-8 col-md-8 col-sm-8" style="background-color:white;color:grey;">
+  <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left:0px;padding-right:0px;padding-bottom:0px;">
+    <center>
+      <a href="https://www.engadin.stmoritz.ch/winter/en/news-events/topevents/la-diagonela-en/" class="portfolio-box">
+          <img src="image/auto.jpg" class="img-responsive" alt="">
+          <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded" >
+                      Automation
+                  </div>
+
+              </div>
+          </div>
+      </a>
+    </center>
+
+  </div>
+  <div class="col-lg-8 col-md-8 col-sm-8">
+    <br>
+    <center><h3>26 February, 2019</h3>
+      <h4>Domain: Machine Learning</h4></center>
+  </div>
+</div>
+</div>
+<br>
+<br>
+
+<div class="row no-gutter popup-gallery">
+  <div class="col-lg-2 col-md-2 col-sm-2">
+
+  </div>
+  <div class="col-lg-8 col-md-8 col-sm-8" style="background-color:white;color:grey;">
+  <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left:0px;padding-right:0px;">
+    <center>
+      <a href="https://www.engadin.stmoritz.ch/winter/en/news-events/topevents/la-diagonela-en/" class="portfolio-box">
+          <img src="image/ml.jpeg" class="img-responsive" alt="">
+          <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded" >
+                      Machine Learning
+                  </div>
+
+              </div>
+          </div>
+      </a>
+    </center>
+
+  </div>
+  <div class="col-lg-8 col-md-8 col-sm-8">
+    <br>
+    <center><h3>27 February, 2019</h3>
+      <h4>Domain: Machine Learning</h4></center>
+  </div>
+</div>
+</div>
+<br>
+<br>
+
+<div class="row no-gutter popup-gallery">
+  <div class="col-lg-2 col-md-2 col-sm-2">
+
+  </div>
+  <div class="col-lg-8 col-md-8 col-sm-8" style="background-color:white;color:grey;">
+  <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left:0px;padding-right:0px;">
+    <center>
+      <a href="https://www.engadin.stmoritz.ch/winter/en/news-events/topevents/la-diagonela-en/" class="portfolio-box">
+          <img src="image/big_data.jpg" class="img-responsive" alt="">
+          <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded" >
+                      Internet of Things
+                  </div>
+
+              </div>
+          </div>
+      </a>
+    </center>
+
+  </div>
+  <div class="col-lg-8 col-md-8 col-sm-8">
+    <br>
+    <center><h3>28 February, 2019</h3>
+      <h4>Domain: Internet of Things</h4></center>
+  </div>
+</div>
+</div>
+<br>
+<br>
+
+<div class="row no-gutter popup-gallery">
+  <div class="col-lg-2 col-md-2 col-sm-2">
+
+  </div>
+  <div class="col-lg-8 col-md-8 col-sm-8" style="background-color:white;color:grey;">
+  <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left:0px;padding-right:0px;">
+    <center>
+      <a href="https://www.engadin.stmoritz.ch/winter/en/news-events/topevents/la-diagonela-en/" class="portfolio-box">
+          <img src="image/iott.jpg" class="img-responsive" alt="">
+          <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded" >
+                      Big Data
+                  </div>
+
+              </div>
+          </div>
+      </a>
+    </center>
+
+  </div>
+  <div class="col-lg-8 col-md-8 col-sm-8">
+    <br>
+    <center><h3>29 February, 2019</h3>
+      <h4>Domain: Big Data</h4></center>
+  </div>
+</div>
+</div>
+<br>
+<br>
+
+
+</div>
+</section>
+
+<footer style="background:#232e36;min-height:120px;">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 col-sm-12 pt-4" style="padding-left:0; padding-right:0;padding:30px;">
+                  <center><p class="follow" style="color:white;"><e>Follow us at:</e></p>
+
+                  <ul class="ftrlog">
+                  <center>  <li style="display:inline" class="ml-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                         <a href="https://t.me/capitalcoinico" style="color:azure; "><img src="image/telegram.jpg" style="width: 30px" /></a>
+                     </li>
+                     &nbsp;
+
+                     <li style="display:inline" class="ml-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.7s">
+                         <a href="https://www.facebook.com/CapitalCoin11" style="color:azure;"><img src="image/facebook.jpg" style="width: 30px" /></a>
+                     </li>
+                      &nbsp;
+                     <li style="display:inline" class="ml-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.9s">
+                         <a href="https://twitter.com/CapitalCoinICO" style="color:azure;"><img src="image/twitter.png" style="width: 30px" /></a>
+                     </li>
+                      &nbsp;
+                     <li style="display:inline" class="ml-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.9s">
+                         <a href="https://medium.com/@misskhan" style="color:azure;"><img src="image/medium.png" style="width: 30px" /></a>
+                     </li>
+                      &nbsp;
+                     <li style="display:inline" class="ml-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.9s">
+                         <a href="https://www.youtube.com/channel/UCVCH2nzRycVWhfnn3qGSM8Q" style="color:azure;"><img src="image/youtube-512.png" style="width: 30px" /></a>
+                     </li>
+                      &nbsp;
+                     <li style="display:inline" class="ml-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.9s">
+                         <a href="http://himalayacrypto.show/" style="color:azure;"><img src="image/website.png" style="width: 30px" /></a>
+                     </li>
+                      &nbsp;
+                   </center>
+
+                  </ul>
+                  <br>
+                  <p class="ftrcpr" style="color:white;">Copyright © uno.incubator.com</p>
+                </center>
+              </div>
+          </div>
+      </div>
+    </footer>
+
+    <script>
+
+        $(".list9").click(function() {
+            $('html,body').animate({
+                scrollTop: $("#startup").offset().top},
+                'slow');
+        });
+        $(".list8").click(function() {
+            $('html,body').animate({
+                scrollTop: $("#mentor").offset().top},
+                'slow');
+        });
+    </script>
+
+
+    <script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+    <script src="js/main.js" charset="utf-8"></script>
+  </body>
+</html>
